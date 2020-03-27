@@ -1,5 +1,5 @@
 {
-  "name": "express-boilerplate",
+  "name": "bookmars-with-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,9 @@
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bookmars", "server"],
+  "engines": {"node": "12.16.1"},
+  "author": "Dasha and Brandon",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
