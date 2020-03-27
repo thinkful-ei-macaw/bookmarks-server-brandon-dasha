@@ -1,16 +1,16 @@
 /* eslint-disable strict */
-require('dotenv').config();
-const winston = require('winston');
-const { NODE_ENV } = require('./config');
+const logger = require('./logger');
+const { API_TOKEN } = require('./config');
 
-app.use(function validateBearerToken(req, res, next){
-  const apiToken = process.env.API_TOKEN;
+function validateBearerToken(req, res, next){
   const authToken = req.get('authorisation');
+  logger.error(`unauthorized request to ${req.path}`);
   
-  if(!authToken || authToken.split(' ')[1] !==apiToken){
+  if(!authToken || authToken.split(' ')[1] !== API_TOKEN){
     logger.error(`unauthorised request to path: ${req.path}`);
     return res.status(401).json({error: 'unathorised request'});
   }
-});
+  next();
+}
 
-module.exports = validateBearerToken();
+module.exports = validateBearerToken;
