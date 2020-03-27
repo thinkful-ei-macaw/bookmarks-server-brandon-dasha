@@ -23,3 +23,5 @@ description: 'find any website!',
 rating:5
     },
 ]
+
+module.exports = {bookmarks}
