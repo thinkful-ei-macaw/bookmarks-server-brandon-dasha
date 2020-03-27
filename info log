@@ -1,0 +1,9 @@
+{"message":"unauthorised request to path: /address","level":"error"}
+{"message":"unauthorised request to path: /","level":"error"}
+{"message":"unauthorised request to path: /","level":"error"}
+{"message":"unauthorised request to path: /","level":"error"}
+{"message":"unauthorised request to path: /bookmark","level":"error"}
+{"message":"unauthorised request to path: /bookmarks","level":"error"}
+{"message":"unauthorised request to path: /bookmarks","level":"error"}
+{"message":"unauthorised request to path: /bookmark","level":"error"}
+{"message":"unauthorised request to path: /bookmark/id","level":"error"}
